@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión | Ritual</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-intro" aria-label="Ritual">
+      <div class="brand login-brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <h1>Ritual</h1>
+      </div>
+
+      <div class="login-message">
+        <p class="eyebrow">Tus hábitos, un día a la vez</p>
+        <h2>Haz del progreso<br>una rutina.</h2>
+      </div>
+
+      <div class="login-orbit" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <p class="eyebrow">Bienvenido</p>
+        <h2>Iniciar sesión</h2>
+        <p class="login-subtitle">Continúa con tu seguimiento diario.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+
+          <div class="password-label">
+            <label for="password">Contraseña</label>
+            <a href="#">¿La olvidaste?</a>
+          </div>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" minlength="4" required>
+
+          <p class="form-error" id="formError" role="alert"></p>
+          <button class="login-button" type="submit">Entrar</button>
+        </form>
+
+        <p class="login-footer">¿Nuevo en Ritual? <a href="#">Crear cuenta</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
